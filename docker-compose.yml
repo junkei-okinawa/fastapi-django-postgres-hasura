@@ -1,0 +1,63 @@
+version: '3.6'
+services:
+  postgres:
+    image: postgres:12
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+    networks:
+      - project
+  
+  hasura:
+    image: hasura/graphql-engine:v1.3.2
+    ports:
+      - ${IP}:${HASURA_PORT}:${HASURA_PORT}
+    depends_on:
+      - "postgres"
+    restart: always
+    tty: true
+    environment:
+      HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:${POSTGRES_PASSWORD}@postgres:${POSTGRES_PORT}/$SCHEMA
+      ## enable the console served by server
+      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
+      ## enable debugging mode. It is recommended to disable this in production
+      HASURA_GRAPHQL_DEV_MODE: "true"
+      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
+      ## uncomment next line to set an admin secret
+      HASURA_GRAPHQL_ADMIN_SECRET: "Mm018001"
+      # HASURA AUTH0 : https://qiita.com/shirakiyo/items/72866f19484129d0f100
+      # Setting up your JWT verification server
+      # HASURA_GRAPHQL_JWT_SECRET: "anonymous"
+    networks:
+      - project
+
+  app:
+    image: app
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    depends_on:
+      - "hasura"
+    ports:
+      - ${IP}:${APP_PORT}:${APP_PORT}
+    environment:
+      SCHEMA: $SCHEMA
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+    restart: always
+    tty: true
+    volumes:
+      - ./app:/app
+    networks:
+      - project
+    command: bash entry_point.sh
+
+volumes:
+  db_data:
+
+networks:
+  project:
+    driver: bridge

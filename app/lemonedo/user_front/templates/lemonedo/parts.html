@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<script>
+			if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+					document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">');
+				}else{
+					document.write('<meta content="width=1150" name="viewport">');
+			}
+		</script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/drawer.min.css">
+		<link rel="stylesheet" media="all" href="css/style.css">
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+		<script src="js/flexibility.js"></script>
+		<script src="js/drawer.min.js"></script>
+		<script src="js/jquery.inview.min.js"></script>
+		<script src="js/footerFixed.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body class="drawer drawer--top">
+		<div class="cursor"></div>
+		<div class="follower"></div>
+		<!-- MENU -->
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+			<span class="drawer-menu-text"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<ul class="login-list">
+					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>無料会員登録</a></li>
+					<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>ログイン</a></li>
+				</ul>
+				<li><a class="drawer-menu-item" href="#">ホーム</a></li>
+				<li><a class="drawer-menu-item" href="#">Lemonedoについて</a></li>
+				<li><a class="drawer-menu-item" href="#">ステッカーリスト</a></li>
+				<li><a class="drawer-menu-item" href="#">よくある質問</a></li>
+				<li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+				<li><a class="drawer-menu-item sub" href="#">利用規約</a></li>
+				<li><a class="drawer-menu-item sub" href="#">広告掲載規約</a></li>
+				<li><a class="drawer-menu-item sub" href="#">プライバシーポリシー</a></li>
+				<li><a class="drawer-menu-item sub" href="#">会社概要</a></li>
+				<ul class="sns-list">
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+				</ul>
+			</ul>
+		</nav>
+
+		<!--ヘッダー-->
+		<header>
+			<div class="logo">
+				<p><a href="#"><img src="images/logo.png" alt="レモネード"></a></p>
+			</div><!--logo end-->
+			<div class="inner">
+				<div class="btn-sticker">
+					<div class="wrap">
+						<ul>
+							<li><a href="#">ステッカーをさがす</a></li>
+							<li><a href="#">ステッカーを依頼する</a></li>
+						</ul>
+					</div><!--wrap end-->
+				</div><!--btn-sticker end-->
+			</div><!--inner end-->
+			<div class="link-login">
+				<div class="wrap">
+					<ul>
+						<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>無料会員登録</a></li>
+						<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>ログイン</a></li>
+					</ul>
+				</div><!--wrap end-->
+			</div><!--link-login end-->
+		</header>
+
+		<!--グローバルナビ-->
+		<nav class="gnavi">
+			<ul>
+				<li><a href="#">ホーム</a></li>
+				<li><a href="#">Lemonedoについて</a></li>
+				<li><a href="#">ステッカーリスト</a></li>
+				<li><a href="#" class="now">よくある質問</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul>
+		</nav>
+		
+		<!--sns-->
+		<div class="sns-box only-pc">
+			<ul>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+			</ul>
+			<p class="copy">2020 &copy; Lemonedo.com</p>
+		</div><!--sns-box end-->
+
+		<!--コンテンツ-->
+		<main role="main">
+			<article>
+				<div class="com-visual">
+					<h1><span class="move">parts</span></h1>
+					<h2>パーツ</h2>
+				</div><!--com-visual end-->
+				
+				<div class="inner">
+					<p class="parts-ttl">▼ ボタン（aタグ）</p>
+					<table class="parts-tbl">
+						<tbody>
+							<tr>
+								<th rowspan="3">黄色背景</th>
+								<td><p><a href="#" class="com-btn-bg-yellow small">黄色背景（小）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-yellow middle">黄色背景（中）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-yellow large">黄色背景（大）</a></p></td>
+							</tr>
+							<tr>
+								<th rowspan="3">白背景</th>
+								<td><p><a href="#" class="com-btn-bg-white small">白背景（小）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-white middle">白背景（中）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-white large">白背景（大）</a></p></td>
+							</tr>
+							<tr>
+								<th rowspan="3">黒枠</th>
+								<td><p><a href="#" class="com-btn-border-black small">黒枠（小）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-border-black middle">黒枠（中）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-border-black large">黒枠（大）</a></p></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<p class="parts-ttl">▼ ボタン（aタグ）<span>※矢印アイコンなし</span></p>
+					<table class="parts-tbl">
+						<tbody>
+							<tr>
+								<th rowspan="3">黄色背景</th>
+								<td><p><a href="#" class="com-btn-bg-yellow small-normal">黄色背景（小）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-yellow middle-normal">黄色背景（中）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-yellow large-normal">黄色背景（大）</a></p></td>
+							</tr>
+							<tr>
+								<th rowspan="3">白背景</th>
+								<td><p><a href="#" class="com-btn-bg-white small-normal">白背景（小）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-white middle-normal">白背景（中）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-bg-white large-normal">白背景（大）</a></p></td>
+							</tr>
+							<tr>
+								<th rowspan="3">黒枠</th>
+								<td><p><a href="#" class="com-btn-border-black small-normal">黒枠（小）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-border-black middle-normal">黒枠（中）</a></p></td>
+							</tr>
+							<tr>
+								<td><p><a href="#" class="com-btn-border-black large-normal">黒枠（大）</a></p></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<p class="parts-ttl">▼ ボタン（inputタグ）</p>
+					<table class="parts-tbl">
+						<tbody>
+							<tr>
+								<th rowspan="3">黄色背景</th>
+								<td><p><input type="submit" class="com-btn-bg-yellow small" value="黄色背景（小）"></p></td>
+							</tr>
+							<tr>
+								<td><p><input type="submit" class="com-btn-bg-yellow middle" value="黄色背景（中）"></p></td>
+							</tr>
+							<tr>
+								<td><p><input type="submit" class="com-btn-bg-yellow large" value="黄色背景（大）"></p></td>
+							</tr>
+							<tr>
+								<th rowspan="3">白背景</th>
+								<td><p><input type="submit" class="com-btn-bg-white small" value="白背景（小）"></p></td>
+							</tr>
+							<tr>
+								<td><p><input type="submit" class="com-btn-bg-white middle" value="白背景（中）"></p></td>
+							</tr>
+							<tr>
+								<td><p><input type="submit" class="com-btn-bg-white large" value="白背景（大）"></p></td>
+							</tr>
+							<tr>
+								<th rowspan="3">黒枠</th>
+								<td><p><input type="submit" class="com-btn-border-black small" value="黒枠（小）"></p></td>
+							</tr>
+							<tr>
+								<td><p><input type="submit" class="com-btn-border-black middle" value="黒枠（中）"></p></td>
+							</tr>
+							<tr>
+								<td><p><input type="submit" class="com-btn-border-black large" value="黒枠（大）"></p></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<p class="parts-ttl">▼ ボタンリスト（aタグ）<span>※左右の種類変更可能</span></p>
+					<p class="b-m20">class="b-m20"は余白のために使用しているので、構築時は不要です。</p>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-bg-yellow small">黄色背景（小）</a></li>
+						<li><a href="#" class="com-btn-bg-yellow small">黄色背景（小）</a></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-bg-white middle">白背景（中）</a></li>
+						<li><a href="#" class="com-btn-bg-white middle">白背景（中）</a></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-border-black large">黒枠（大）</a></li>
+						<li><a href="#" class="com-btn-border-black large">黒枠（大）</a></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-bg-yellow middle">黄色背景（中）</a></li>
+						<li><a href="#" class="com-btn-bg-white middle">白背景（中）</a></li>
+					</ul>
+					
+					<p class="parts-ttl">▼ ボタンリスト（aタグ）<span>※矢印アイコンなし　※左右の種類変更可能</span></p>
+					<p class="b-m20">class="b-m20"は余白のために使用しているので、構築時は不要です。</p>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-bg-yellow small-normal">黄色背景（小）</a></li>
+						<li><a href="#" class="com-btn-bg-yellow small-normal">黄色背景（小）</a></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-bg-white middle-normal">白背景（中）</a></li>
+						<li><a href="#" class="com-btn-bg-white middle-normal">白背景（中）</a></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-border-black large-normal">黒枠（大）</a></li>
+						<li><a href="#" class="com-btn-border-black large-normal">黒枠（大）</a></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><a href="#" class="com-btn-bg-yellow middle-normal">黄色背景（中）</a></li>
+						<li><a href="#" class="com-btn-bg-white middle-normal">白背景（中）</a></li>
+					</ul>
+					
+					<p class="parts-ttl">▼ ボタンリスト（inputタグ）<span>※左右の種類変更可能</span></p>
+					<p class="b-m20">class="b-m20"は余白のために使用しているので、構築時は不要です。</p>
+					<ul class="com-btn-list b-m20">
+						<li><input type="submit" class="com-btn-bg-yellow small" value="黄色背景（小）"></li>
+						<li><input type="submit" class="com-btn-bg-yellow small" value="黄色背景（小）"></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><input type="submit" class="com-btn-bg-white middle" value="白背景（中）"></li>
+						<li><input type="submit" class="com-btn-bg-white middle" value="白背景（中）"></li>
+					</ul>
+					<ul class="com-btn-list b-m20">
+						<li><input type="submit" class="com-btn-border-black large" value="黒枠（大）"></li>
+						<li><input type="submit" class="com-btn-border-black large" value="黒枠（大）"></li>
+					</ul>
+					<ul class="com-btn-list">
+						<li><input type="submit" class="com-btn-bg-yellow middle" value="黄色背景（中）"></li>
+						<li><input type="submit" class="com-btn-bg-white middle" value="白背景（中）"></li>
+					</ul>
+				</div><!--inner end-->
+			</article>
+		</main>
+
+		<!--フッター-->
+		<div id="footer">
+			<footer>
+				<div class="inner">
+					<nav class="fnavi">
+						<ul>
+							<li><a href="#">利用規約</a></li>
+							<li><a href="#">広告掲載規約</a></li>
+							<li><a href="#">プライバシーポリシー</a></li>
+							<li><a href="#">会社概要</a></li>
+						</ul>
+					</nav>
+					<div class="sns-box only-sp">
+						<ul>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						</ul>
+						<p class="copy">2020 &copy; Lemonedo.com</p>
+					</div><!--sns-box end-->
+				</div><!--inner end-->
+			</footer>
+		</div><!--#footer end-->
+		
+		<!--下部固定-->
+		<div class="footer-fixed">
+			<div class="btn-sticker">
+				<div class="wrap">
+					<ul>
+						<li><a href="#">ステッカーをさがす</a></li>
+						<li><a href="#">ステッカーを依頼する</a></li>
+					</ul>
+				</div><!--wrap end-->
+			</div><!--btn-sticker end-->
+		</div><!--footer-fixed end-->
+		
+		<!--ページトップ-->
+		<p class="pagetop"><a href="#"><img src="images/pagetop.png" alt=""></a></p>
+	</body>
+</html>

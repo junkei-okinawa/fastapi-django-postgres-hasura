@@ -1,0 +1,449 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<title>Lemonedo（レモネード）- 沖縄発の個人広告サービス</title>
+		<script>
+			if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+					document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">');
+				}else{
+					document.write('<meta content="width=1150" name="viewport">');
+			}
+		</script>
+		<link rel="icon" type="image/x-icon" href='{% static "lemonedo/images/favicon.png" %}'>
+		<!--▼▼▼▼▼SEO▼▼▼▼▼-->
+		<meta name="description"  content="Lemonedo（レモネード）は、沖縄県発の個人が広告塔になって気軽におこづかいをゲットできるサービスです。ステッカーを貼ったマイカーでドライブして、応援したい企業やサービスをどんどん広げよう！" />
+		<meta name="keywords"  content="Lemonedo・沖縄レモネード・沖縄広告・沖縄ドライブ・沖縄お得情報" />
+		<link rel="canonical" href="#" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Lemonedo（レモネード）- 沖縄発の個人広告サービス" />
+		<meta property="og:description" content="Lemonedo（レモネード）は、沖縄県発の個人が広告塔になって気軽におこづかいをゲットできるサービスです。ステッカーを貼ったマイカーでドライブして、応援したい企業やサービスをどんどん広げよう！" />
+		<meta property="og:url" content="#" />
+		<meta property="og:site_name" content="Lemonedo（レモネード）- 沖縄発の個人広告サービス" />
+		<meta property="og:image" content="#" />
+		<meta property="og:image:secure_url" content="#" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Lemonedo（レモネード）- 沖縄発の個人広告サービス" />
+		<meta name="twitter:description" content="Lemonedo（レモネード）は、沖縄県発の個人が広告塔になって気軽におこづかいをゲットできるサービスです。ステッカーを貼ったマイカーでドライブして、応援したい企業やサービスをどんどん広げよう！" />
+		<meta name="twitter:image" content="#" />
+		<!--▲▲▲▲▲SEO▲▲▲▲▲-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+		<link rel="stylesheet" href='{% static "lemonedo/css/drawer.min.css" %}'>
+		<link rel="stylesheet" media="all" href='{% static "lemonedo/css/style.css" %}'>
+		<!--▼▼▼▼▼追加用css▼▼▼▼▼-->
+		<link rel="stylesheet" media="all" href='{% static "lemonedo/css/style_evorevo.css" %}'>
+		<!--▲▲▲▲▲追加用css▲▲▲▲▲-->
+		<!--▼▼▼▼▼トップページのみ▼▼▼▼▼-->
+		<link rel="stylesheet" href='{% static "lemonedo/css/slick.css" %}'>
+		<link rel="stylesheet" href='{% static "lemonedo/css/slick-theme.css" %}'>
+		<!--▲▲▲▲▲トップページのみ▲▲▲▲▲-->
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+		<script src='{% static "lemonedo/js/flexibility.js" %}'></script>
+		<script src='{% static "lemonedo/js/drawer.min.js" %}'></script>
+		<script src='{% static "lemonedo/js/jquery.inview.min.js" %}'></script>
+		<script src='{% static "lemonedo/js/footerFixed.js" %}'></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+		<script src='{% static "lemonedo/js/script.js" %}'></script>
+		<!--▼▼▼▼▼トップページのみ▼▼▼▼▼-->
+		<script src='{% static "lemonedo/js/slick.min.js" %}'></script>
+		<script>
+			$(document).on('ready', function() {
+			  $(".slider").slick({
+				  autoplay: true,
+				  autoplaySpeed: 5000,
+				  speed: 500,
+				  infinite: true,
+				  slidesToShow: 3,
+				  slidesToScroll: 1,
+				  responsive: [
+					{
+					  breakpoint: 736,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					},
+				]
+			  });
+			});
+		</script>
+		<!--▲▲▲▲▲トップページのみ▲▲▲▲▲-->
+	</head>
+	<body class="drawer drawer--top">
+		<div class="cursor"></div>
+		<div class="follower"></div>
+		<!-- MENU -->
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+			<span class="drawer-menu-text"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<ul class="login-list">
+					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>無料会員登録</a></li>
+					<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>ログイン</a></li>
+				</ul>
+				<li><a class="drawer-menu-item" href="#">ホーム</a></li>
+				<li><a class="drawer-menu-item" href="#about">Lemonedoについて</a></li>
+				<li><a class="drawer-menu-item" href="#">ステッカーリスト</a></li>
+				<li><a class="drawer-menu-item" href="#">よくある質問</a></li>
+				<li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+				<li><a class="drawer-menu-item sub" href="#">利用規約</a></li>
+				<li><a class="drawer-menu-item sub" href="#">広告掲載規約</a></li>
+				<li><a class="drawer-menu-item sub" href="#">プライバシーポリシー</a></li>
+				<li><a class="drawer-menu-item sub" href="#">会社概要</a></li>
+				<ul class="sns-list">
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+				</ul>
+			</ul>
+		</nav>
+		
+		<!--ローディング-->
+		<div class="start">
+			<p><img src='{% static "lemonedo/images/logo_loader.png" %}' alt=""></p>
+		</div>
+		
+		<!--ヘッダー-->
+		<header>
+			<div class="logo">
+				<h1><a href="#"><img src='{% static "lemonedo/images/logo.png" %}' alt="レモネード"></a></h1>
+			</div><!--logo end-->
+			<div class="inner">
+				<div class="btn-sticker">
+					<div class="wrap">
+						<ul>
+							<li><a href="#">ステッカーをさがす</a></li>
+							<li><a href="#">ステッカーを依頼する</a></li>
+						</ul>
+					</div><!--wrap end-->
+				</div><!--btn-sticker end-->
+			</div><!--inner end-->
+			<div class="link-login">
+				<div class="wrap">
+					<ul>
+						<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>無料会員登録</a></li>
+						<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>ログイン</a></li>
+					</ul>
+				</div><!--wrap end-->
+			</div><!--link-login end-->
+		</header>
+
+		<!--グローバルナビ-->
+		<nav class="gnavi">
+			<ul>
+				<li><a href="#" class="now">ホーム</a></li>
+				<li><a href="#about">Lemonedoについて</a></li>
+				<li><a href="#">ステッカーリスト</a></li>
+				<li><a href="#">よくある質問</a></li>
+				<li><a href="#">お問い合わせ</a></li>
+			</ul>
+		</nav>
+		
+		<!--sns-->
+		<div class="sns-box only-pc">
+			<ul>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+			</ul>
+			<p class="copy">2020 &copy; Lemonedo.com</p>
+		</div><!--sns-box end-->
+
+		<!--コンテンツ-->
+		<main role="main">
+			<article class="top">
+				<section class="main-visual">
+					<div class="inner">
+						<div class="read-box">
+							<p>応援したい企業を<br class="br-sp">一緒に盛り上げよう！</p>
+						</div><!--read-box end-->
+						<div class="wrap">
+							<div class="left">
+								<p><img src='{% static "lemonedo/images/car.png" %}' alt=""></p>
+							</div><!--left end-->
+							<div class="right">
+								<div class="only-sp">
+									<ul>
+										<li><img src='{% static "lemonedo/images/sp/point_icn_01.png" %}' alt="ステッカーを選ぶ"></li>
+										<li><img src='{% static "lemonedo/images/sp/point_icn_02.png" %}' alt="貼って走る"></li>
+										<li><img src='{% static "lemonedo/images/sp/point_icn_03.png" %}' alt="収入ゲット！"></li>
+									</ul>
+								</div>
+								<div class="only-pc">
+									<ul>
+										<li>
+											<p class="img"><img src='{% static "lemonedo/images/point_icn_01.png" %}' alt=""></p>
+											<p class="point">ステッカー<br>を選ぶ</p>
+										</li>
+										<li>
+											<p class="img"><img src='{% static "lemonedo/images/point_icn_02.png" %}' alt=""></p>
+											<p class="point">貼って<br>走る</p>
+										</li>
+										<li>
+											<p class="img"><img src='{% static "lemonedo/images/point_icn_03.png" %}' alt=""></p>
+											<p class="point">収入<br>ゲット！</p>
+										</li>
+									</ul>
+								</div>
+								<p class="text">Lemonedo（レモネード）では、マイカーに応援したい企業やサービスの<br class="br-pc">
+								ステッカーを貼ってドライブするだけで収入を得ることができます！</p>
+							</div><!--right end-->
+						</div><!--wrap end-->
+						<div class="sub-read-box">
+							<p>家族や友人に応援したい企業・<br class="br-sp">サービスのお得な情報を紹介して</p>
+							<p><span>ハッピーを発信しよう!!</span></p>
+						</div><!--sub-read-box end-->
+					</div><!--inner end-->
+				</section>
+				
+				<section class="sec1 fadeInUp">
+					<div class="inner">
+						<div class="sub-ttl">
+							<h2><span class="move">Instagram</span></h2>
+							<h3>インスタグラム</h3>
+						</div><!--sub-ttl end-->
+						<ul class="instagram-list">
+							<li><a href="#"><img src='{% static "lemonedo/images/dummy/sticker_05.png" %}' alt=""></a></li>
+							<li><a href="#"><img src='{% static "lemonedo/images/dummy/sticker_03.jpg" %}' alt=""></a></li>
+							<li><a href="#"><img src='{% static "lemonedo/images/dummy/sticker_01.jpg" %}' alt=""></a></li>
+							<li><a href="#"><img src='{% static "lemonedo/images/dummy/sticker_05.png" %}' alt=""></a></li>
+						</ul>
+						<ul class="tag">
+							<li>#Lemonedo沖縄</li>
+							<li>をつけて投稿！</li>
+						</ul>
+						<div class="follow-box">
+							<h4><span>＼</span>Follow us!<span>／</span></h4>
+							<ul>
+								<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+							</ul>
+						</div><!--follow-box end-->
+					</div><!--inner end-->
+				</section>
+				
+				<section class="sec2 fadeInUp">
+					<div class="inner">
+						<div class="sub-ttl">
+							<h2><span class="move">Stickers</span></h2>
+							<h3>ステッカー</h3>
+						</div><!--sub-ttl end-->
+						<div class="slider">
+							<div class="box">
+								<a href="#">
+									<div class="wrap">
+										<p><img src='{% static "lemonedo/images/dummy/sticker_01.jpg" %}' alt=""></p>
+									</div><!--wrap end-->
+									<h4>trevary</h4>
+								</a>
+							</div><!--box end-->
+							<div class="box">
+								<a href="#">
+									<div class="wrap">
+										<p><img src='{% static "lemonedo/images/dummy/sticker_02.jpg" %}' alt=""></p>
+									</div><!--wrap end-->
+									<h4>Lemonedo</h4>
+								</a>
+							</div><!--box end-->
+							<div class="box">
+								<a href="#">
+									<div class="wrap">
+										<p><img src='{% static "lemonedo/images/dummy/sticker_03.jpg" %}' alt=""></p>
+									</div><!--wrap end-->
+									<h4>AGRICOM</h4>
+								</a>
+							</div><!--box end-->
+							<div class="box">
+								<a href="#">
+									<div class="wrap">
+										<p><img src='{% static "lemonedo/images/dummy/sticker_01.jpg" %}' alt=""></p>
+									</div><!--wrap end-->
+									<h4>trevary</h4>
+								</a>
+							</div><!--box end-->
+							<div class="box">
+								<a href="#">
+									<div class="wrap">
+										<p><img src='{% static "lemonedo/images/dummy/sticker_02.jpg" %}' alt=""></p>
+									</div><!--wrap end-->
+									<h4>Lemonedo</h4>
+								</a>
+							</div><!--box end-->
+							<div class="box">
+								<a href="#">
+									<div class="wrap">
+										<p><img src='{% static "lemonedo/images/dummy/sticker_03.jpg" %}' alt=""></p>
+									</div><!--wrap end-->
+									<h4>AGRICOM</h4>
+								</a>
+							</div><!--box end-->
+						</div><!--slider end-->
+						<p><a href="#" class="com-btn-bg-white middle">すべてのステッカーを見る</a></p>
+					</div><!--inner end-->
+				</section>
+				
+				<section class="sec3 fadeInUp" id="about">
+					<div class="inner">
+						<div class="wrap-box">
+							<div class="img">
+								<p><img src='{% static "lemonedo/images/about_img.jpg" %}' alt=""></p>
+							</div><!--img end-->
+							<p class="left">ドライブ時間を活用して、</p>
+							<p class="right">今のライフスタイルのまま稼ごう！</p>
+						</div><!--wrap-box end-->
+					</div><!--inner end-->
+				</section>
+				
+				<section class="sec4 fadeInUp">
+					<div class="inner">
+						<div class="sub-ttl">
+							<h2><span class="move">Flow of use</span></h2>
+							<h3>ご利用の流れ</h3>
+						</div><!--sub-ttl end-->
+						<ul class="flow-list">
+							<li>
+								<p class="num">1</p>
+								<div class="wrap">
+									<p class="text">ステッカーを選んだら<br>申し込みフォームから会員登録</p>
+									<p class="img"><img src='{% static "lemonedo/images/flow_icn_01.png" %}' alt=""></p>
+								</div><!--wrap end-->
+							</li>
+							<li>
+								<p class="num">2</p>
+								<div class="wrap">
+									<p class="text">ステッカーが届いたら<br>クルマに貼る</p>
+									<p class="img"><img src='{% static "lemonedo/images/flow_icn_02.png" %}' alt=""></p>
+								</div><!--wrap end-->
+							</li>
+							<li>
+								<p class="num">3</p>
+								<div class="wrap">
+									<p class="text">走る前と走った後に報告<br><span>（走った後の報告は月末）</span></p>
+									<p class="img"><img src='{% static "lemonedo/images/flow_icn_03.png" %}' alt=""></p>
+								</div><!--wrap end-->
+							</li>
+							<li>
+								<p class="num">4</p>
+								<div class="wrap">
+									<p class="text">スポンサー料を受け取ります<br><span>（3,000円以上から引き出し可能）</span></p>
+									<p class="img"><img src='{% static "lemonedo/images/flow_icn_04.png" %}' alt=""></p>
+								</div><!--wrap end-->
+							</li>
+						</ul>
+						<ul class="btn-list">
+							<li><a href="#" class="com-btn-bg-yellow middle">無料会員登録する</a></li>
+							<li><a href="#" class="com-btn-bg-white middle">よくある質問へ</a></li>
+						</ul>
+					</div><!--inner end-->
+				</section>
+				
+				<section class="sec5 fadeInUp">
+					<div class="inner">
+						<div class="sub-ttl">
+							<h2><span class="move">Notice</span></h2>
+							<h3>お知らせ</h3>
+						</div><!--sub-ttl end-->
+						<div class="box-notice">
+							<table>
+								<tbody>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">第１弾ステッカー広告スタート！！</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">ステッカー追加のご案内（●●～● ● ▲▲▲▲株式会社）ステッカー追加のご案内（●●～● ● ▲▲▲▲株式会社）</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">●●に関するご案内</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">●●に関するご案内</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">●●に関するご案内</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">第１弾ステッカー広告スタート！！</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">ステッカー追加のご案内（●●～● ● ▲▲▲▲株式会社）</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">●●に関するご案内</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">●●に関するご案内</a></td>
+									</tr>
+									<tr>
+										<th>2020/11/01</th>
+										<td><a href="#">●●に関するご案内</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--box-notice end-->
+					</div><!--inner end-->
+				</section>
+			</article>
+		</main>
+
+		<!--フッター-->
+		<div id="footer">
+			<footer>
+				<div class="inner">
+					<nav class="fnavi">
+						<ul>
+							<li><a href="#">利用規約</a></li>
+							<li><a href="#">広告掲載規約</a></li>
+							<li><a href="#">プライバシーポリシー</a></li>
+							<li><a href="#">会社概要</a></li>
+						</ul>
+					</nav>
+					<div class="sns-box only-sp">
+						<ul>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						</ul>
+						<p class="copy">2020 &copy; Lemonedo.com</p>
+					</div><!--sns-box end-->
+				</div><!--inner end-->
+			</footer>
+		</div><!--#footer end-->
+		
+		<!--下部固定-->
+		<div class="footer-fixed">
+			<div class="btn-sticker">
+				<div class="wrap">
+					<ul>
+						<li><a href="#">ステッカーをさがす</a></li>
+						<li><a href="#">ステッカーを依頼する</a></li>
+					</ul>
+				</div><!--wrap end-->
+			</div><!--btn-sticker end-->
+		</div><!--footer-fixed end-->
+		
+		<!--ページトップ-->
+		<p class="pagetop"><a href="#"><img src='{% static "lemonedo/images/pagetop.png" %}' alt=""></a></p>
+	</body>
+</html>

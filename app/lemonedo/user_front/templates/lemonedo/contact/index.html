@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<title>お問い合わせ | Lemonedo（レモネード）- 沖縄発の個人広告サービス</title>
+		<script>
+			if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+					document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">');
+				}else{
+					document.write('<meta content="width=1150" name="viewport">');
+			}
+		</script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/drawer.min.css">
+		<link rel="stylesheet" media="all" href="../css/style.css">
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+		<script src="../js/flexibility.js"></script>
+		<script src="../js/drawer.min.js"></script>
+		<script src="../js/jquery.inview.min.js"></script>
+		<script src="../js/footerFixed.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
+		<script src="../js/script.js"></script>
+	</head>
+	<body class="drawer drawer--top">
+		<div class="cursor"></div>
+		<div class="follower"></div>
+		<!-- MENU -->
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+			<span class="drawer-menu-text"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<ul class="login-list">
+					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>無料会員登録</a></li>
+					<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>ログイン</a></li>
+				</ul>
+				<li><a class="drawer-menu-item" href="#">ホーム</a></li>
+				<li><a class="drawer-menu-item" href="#">Lemonedoについて</a></li>
+				<li><a class="drawer-menu-item" href="#">ステッカーリスト</a></li>
+				<li><a class="drawer-menu-item" href="#">よくある質問</a></li>
+				<li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+				<li><a class="drawer-menu-item sub" href="#">利用規約</a></li>
+				<li><a class="drawer-menu-item sub" href="#">広告掲載規約</a></li>
+				<li><a class="drawer-menu-item sub" href="#">プライバシーポリシー</a></li>
+				<li><a class="drawer-menu-item sub" href="#">会社概要</a></li>
+				<ul class="sns-list">
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+				</ul>
+			</ul>
+		</nav>
+
+		<!--ヘッダー-->
+		<header>
+			<div class="logo">
+				<p><a href="#"><img src="../images/logo.png" alt="レモネード"></a></p>
+			</div><!--logo end-->
+			<div class="inner">
+				<div class="btn-sticker">
+					<div class="wrap">
+						<ul>
+							<li><a href="#">ステッカーをさがす</a></li>
+							<li><a href="#">ステッカーを依頼する</a></li>
+						</ul>
+					</div><!--wrap end-->
+				</div><!--btn-sticker end-->
+			</div><!--inner end-->
+			<div class="link-login">
+				<div class="wrap">
+					<ul>
+						<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>無料会員登録</a></li>
+						<li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>ログイン</a></li>
+					</ul>
+				</div><!--wrap end-->
+			</div><!--link-login end-->
+		</header>
+
+		<!--グローバルナビ-->
+		<nav class="gnavi">
+			<ul>
+				<li><a href="#">ホーム</a></li>
+				<li><a href="#">Lemonedoについて</a></li>
+				<li><a href="#">ステッカーリスト</a></li>
+				<li><a href="#">よくある質問</a></li>
+				<li><a href="#" class="now">お問い合わせ</a></li>
+			</ul>
+		</nav>
+		
+		<!--sns-->
+		<div class="sns-box only-pc">
+			<ul>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+			</ul>
+			<p class="copy">2020 &copy; Lemonedo.com</p>
+		</div><!--sns-box end-->
+
+		<!--コンテンツ-->
+		<main role="main">
+			<article>
+				<div class="com-visual">
+					<h1><span class="move">Contact</span></h1>
+					<h2>お問い合わせ</h2>
+				</div><!--com-visual end-->
+				
+				<div class="contact inner fadeInUp">
+					<div class="index">
+						<p class="read">下記の項目にご入力の上、<br class="br-sp">送信してください。</p>
+						<ul class="caution">
+							<li>・入力したメールアドレスが正しくない場合、当社から回答・返信できかねますので、お待ちがないのないようご入力ください。</li>
+							<li>・回答・返信がない場合は、迷惑メールに振り分けされないか、また入力したメールアドレスに間違いがないかお確かめください。 それでも届かない場合は、再度お問い合わせください。</li>
+						</ul>
+						<div class="check-box">
+							<p>お問い合わせいただく前に...</p>
+							<ul>
+								<li><a href="#" class="com-btn-border-black middle">ご利用ガイド</a></li>
+								<li><a href="#" class="com-btn-border-black middle">よくある質問</a></li>
+							</ul>
+						</div><!--check-box end-->
+						<div class="com-box-white">
+							<ul class="com-tab">
+								<li>個人のお客様</li>
+								<li><a href="#">法人のお客様</a></li>
+							</ul><!--com-tab end-->
+							<table class="com-tbl">
+								<tbody>
+									<tr>
+										<th>氏名<span>必須</span></th>
+										<td><input type="text" placeholder="例）レモネード 太郎"></td>
+									</tr>
+									<tr>
+										<th>E-mail<span>必須</span></th>
+										<td><input type="email" placeholder="例）xxxxx@xxxxx.co.jp"></td>
+									</tr>
+									<tr>
+										<th>TEL<span>必須</span></th>
+										<td><input type="tel" placeholder="例）098-000-0000"></td>
+									</tr>
+									<tr>
+										<th>都道府県</th>
+										<td><input type="text" placeholder="例）沖縄県"></td>
+									</tr>
+									<tr>
+										<th>お問い合わせ内容<span>必須</span></th>
+										<td><textarea rows="7" placeholder="お問い合わせ内容を入力してください"></textarea></td>
+									</tr>
+								</tbody>
+							</table>
+							<p><input type="submit" value="入力内容を確認する" class="com-btn-bg-yellow middle-normal"></p>
+							<ul class="btn-list">
+								<li><input type="submit" value="修正する" class="com-btn-border-black middle-normal"></li>
+								<li><input type="submit" value="送信する" class="com-btn-bg-yellow middle-normal"></li>
+							</ul>
+						</div><!--com-box-white end-->
+						
+						<p class="h-m50">▼▼▼法人のお客様▼▼▼（本テキストはコメント用です。）</p>
+						
+						<div class="com-box-white">
+							<ul class="com-tab">
+								<li><a href="#">個人のお客様</a></li>
+								<li>法人のお客様</li>
+							</ul><!--com-tab end-->
+							<table class="com-tbl">
+								<tbody>
+									<tr>
+										<th>会社名<span>必須</span></th>
+										<td><input type="text" placeholder="例）株式会社○○○○○"></td>
+									</tr>
+									<tr>
+										<th>ご担当者名<span>必須</span></th>
+										<td><input type="text" placeholder="例）レモネード 太郎"></td>
+									</tr>
+									<tr>
+										<th>E-mail<span>必須</span></th>
+										<td><input type="email" placeholder="例）xxxxx@xxxxx.co.jp"></td>
+									</tr>
+									<tr>
+										<th>TEL<span>必須</span></th>
+										<td><input type="tel" placeholder="例）098-000-0000"></td>
+									</tr>
+									<tr>
+										<th>ご住所</th>
+										<td><input type="text" placeholder="例）沖縄県○○○○○○○○○○"></td>
+									</tr>
+									<tr>
+										<th>お問い合わせ内容<span>必須</span></th>
+										<td><textarea rows="7" placeholder="お問い合わせ内容を入力してください"></textarea></td>
+									</tr>
+								</tbody>
+							</table>
+							<p><input type="submit" value="入力内容を確認する" class="com-btn-bg-yellow middle"></p>
+							<ul class="btn-list">
+								<li><input type="submit" value="修正する" class="com-btn-border-black middle"></li>
+								<li><input type="submit" value="送信する" class="com-btn-bg-yellow middle"></li>
+							</ul>
+						</div><!--com-box-white end-->
+						
+						<p class="h-m50">▼▼▼完了画面▼▼▼（本テキストはコメント用です。）</p>
+						
+						<div class="finish">
+							<p class="read">お問い合わせありがとうございました。</p>
+							<p class="text">この度は、お問い合わせ頂き誠にありがとうございます。<br>
+							お問い合わせは正常に送信されました。ご入力頂いたアドレスに自動確認メールをお送りしております。<br>
+							確認メールが届かない場合は、お客様のご利用環境や迷惑メール対策等の設定により、届いていない場合がございます。<br>
+							info@xxxxxxxx.comの受信設定をお願いします。<br>
+							24時間以内にご返信しておりますが、万一連絡がない場合は、お手数ですが、お電話にてお問い合わせください。</p>
+							<p><a href="#" class="com-btn-bg-yellow middle-normal">ホームへ戻る</a></p>
+						</div><!--finish end-->
+					</div><!--index end-->
+				</div><!--contact end-->
+			</article>
+		</main>
+
+		<!--フッター-->
+		<div id="footer">
+			<footer>
+				<div class="inner">
+					<nav class="fnavi">
+						<ul>
+							<li><a href="#">利用規約</a></li>
+							<li><a href="#">広告掲載規約</a></li>
+							<li><a href="#">プライバシーポリシー</a></li>
+							<li><a href="#">会社概要</a></li>
+						</ul>
+					</nav>
+					<div class="sns-box only-sp">
+						<ul>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+						</ul>
+						<p class="copy">2020 &copy; Lemonedo.com</p>
+					</div><!--sns-box end-->
+				</div><!--inner end-->
+			</footer>
+		</div><!--#footer end-->
+		
+		<!--下部固定-->
+		<div class="footer-fixed">
+			<div class="btn-sticker">
+				<div class="wrap">
+					<ul>
+						<li><a href="#">ステッカーをさがす</a></li>
+						<li><a href="#">ステッカーを依頼する</a></li>
+					</ul>
+				</div><!--wrap end-->
+			</div><!--btn-sticker end-->
+		</div><!--footer-fixed end-->
+		
+		<!--ページトップ-->
+		<p class="pagetop"><a href="#"><img src="../images/pagetop.png" alt=""></a></p>
+	</body>
+</html>

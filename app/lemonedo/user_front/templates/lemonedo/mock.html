@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MOCK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+
+<style>
+body *{box-sizing:border-box;}
+body{
+	font-size:1rem;
+	line-height:1.6em;
+	font-family: 'Rounded Mplus 1c', sans-serif;
+	color:#333;
+	padding: 2%;
+}
+main{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	display: block;
+}
+
+section {
+	display: block;
+	margin: 5% 0;
+}
+h1 {
+	font-size:2.5rem;
+	color:#fff;
+	background-color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	padding: 15px;
+	line-height:1.6em;
+}
+
+h2 {
+	color: #333342;
+	font-size: 1.375rem;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.5px;
+	display: flex;
+	border-bottom: solid 1px #333342;
+	margin: 0;
+	line-height:1.6em;
+}
+
+
+ul,li{margin:0; list-style-type:none; padding:0; width:100%;}
+li{display:flex; border-bottom:solid 1px #ccc;}
+li:nth-child(odd){background:#f7f7f7;}
+li > *{width:50%; padding:15px; display:block;}
+
+
+a{color:#333;}
+a:hover{background:#999; color:#fff; text-decoration:none;}
+
+a.off {
+	text-decoration: line-through;
+	cursor: default;
+}
+a.off:hover{background:#fff; color:#333;}
+
+footer {
+	display: block;
+	text-align: center;
+}
+
+</style>
+	</head>
+
+<body>
+<main class="main">
+<h1>evorevo様 ページ確認用MOCK</h1>
+<p>※ページ間のリンクは設定しておりませんので、恐れ入りますが下記リストからご確認下さい。</p>
+
+<section>
+	<h2>▼【mock】</h2>
+	<ul>
+		<li>
+			<a href="index.html" target="_blank">TOPページ</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="sticker/index.html" target="_blank">ステッカーリスト一覧</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="sticker/page.html" target="_blank">ステッカーリスト詳細</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="contact/index.html" target="_blank">お問い合わせ</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="faq.html" target="_blank">よくある質問</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="account/index.html" target="_blank">マイページTOP</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="login.html" target="_blank">ログイン画面</a>
+			<span>完了（コーディングで調整）</span>
+		</li>
+		<li>
+			<a href="template.html" target="_blank">テンプレート</a>
+			<span>完了</span>
+		</li>
+		<li>
+			<a href="parts.html" target="_blank">パーツ</a>
+			<span>完了</span>
+		</li>
+	</ul>
+</section>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$('ul li a').each(function() {
+		var $href = $(this).attr('href');
+		if ($href == "") {
+			$(this).addClass("off");
+			$(this).attr("href", "javascript:void(0)")
+		}
+	});
+</script>
+
+</body>
+</html>
